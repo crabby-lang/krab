@@ -12,7 +12,7 @@ import (
 
 	"internal/terminal"
 	"internal/ui"
-	"runner"
+	"internal/runner"
 )
 
 type IDE struct {
