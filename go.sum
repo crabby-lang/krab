@@ -2,3 +2,5 @@ gioui.org v0.9.0 h1:4u7XZwnb5kzQW91Nz/vR0wKD6LdW9CaVF96r3rfy4kc=
 gioui.org v0.9.0/go.mod h1:CjNig0wAhLt9WZxOPAusgFD8x8IRvqt26LdDBa3Jvao=
 gioui.org/x v0.9.0 h1:JUAP3okDXTEmN5WiDpaHbitVWajXKCXyyI5H8qt7KOQ=
 gioui.org/x v0.9.0/go.mod h1:IWhEs8zCwiAUM1sfrdacHvcdUagoaKqcodF/N2D3pss=
+github.com/charmbracelet/bubbles v0.21.0 h1:9TdC97SdRVg/1aaXNVWfFH3nnLAwOXr8Fn6u6mfQdFs=
+github.com/charmbracelet/bubbles v0.21.0/go.mod h1:HF+v6QUR4HkEpz62dx7ym2xc71/KBHg+zKwJtMw+qtg=
