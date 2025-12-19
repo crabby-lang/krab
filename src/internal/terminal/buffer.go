@@ -9,7 +9,11 @@ import (
 type Buffer struct {
 	lines			[]string
 	maxLines		int
+<<<<<<< HEAD
 	mu				sync.RwMutex
+=======
+	mu				sync.RWMutex
+>>>>>>> 90f5ff9 (commit init)
 }
 
 // NewBuffer creates a new terminal buffer
@@ -61,3 +65,12 @@ func (b *Buffer) LineCount() int {
 	defer b.mu.RUnlock()
 	return len(b.lines)
 }
+<<<<<<< HEAD
+=======
+
+func (b *Buffer) Clear() {
+	b.mu.Lock()
+	defer b.mu.Unlock()
+	b.lines = make([]string, 0, b.maxLines)
+}
+>>>>>>> 90f5ff9 (commit init)

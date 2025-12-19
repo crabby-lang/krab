@@ -1,7 +1,10 @@
 package main
 
 import (
+<<<<<<< HEAD
 	"log"
+=======
+>>>>>>> 90f5ff9 (commit init)
 	"os"
 	
 	// gio ui
@@ -10,9 +13,15 @@ import (
 	"gioui.org/op"
 	"gioui.org/widget/material"
 
+<<<<<<< HEAD
 	"internal/terminal"
 	"internal/ui"
 	"internal/runner"
+=======
+	"github.com/crabby-lang/krab/src/internal/terminal"
+	"github.com/crabby-lang/krab/src/internal/ui"
+	"github.com/crabby-lang/krab/src/internal/runner"
+>>>>>>> 90f5ff9 (commit init)
 )
 
 type IDE struct {
@@ -39,7 +48,11 @@ func NewIDE() *IDE {
 		terminalExecutor:   termExecutor,
 		terminalPanel:      termPanel,
 		crabRunner:         crabRunner,
+<<<<<<< HEAD
 		currentFile:		"main.crab"
+=======
+		currentFile:		"main.crab",
+>>>>>>> 90f5ff9 (commit init)
 	}
 
 	termPanel.OnClear = func() {
