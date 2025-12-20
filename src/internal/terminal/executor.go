@@ -59,8 +59,9 @@ func (e *Executor) Execute(command string, args ...string) error {
 	return e.cmd.Wait()
 }
 
-func (e *Executor) ExecuteShell(command string) error {
-	return e.Execute("cmd", "/C", command)
+func (e *Executor) ExecuteShell(command string, args ...string) error {
+	shellArgs := append([]string{"/C", command}, args...)
+	return e.Execute("cmd", shellArgs...)
 }
 
 func (e *Executor) readOutput(reader io.Reader) {

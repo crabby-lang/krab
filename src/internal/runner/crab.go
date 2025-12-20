@@ -2,8 +2,8 @@
 * This uses both the crabby interpreter and the crab cli which acts like a builder, linter,
 * formatter, and tester
 * The compiler part however since crabby hasn't implemented a finished compiler yet it currently
-* focuses on finishing the interpreter & VM bytecode first. 
-*/
+* focuses on finishing the interpreter & VM bytecode first.
+ */
 
 package runner
 
@@ -14,21 +14,21 @@ import (
 )
 
 type Executor interface {
-	Execute(command string, args ...string)		error
-	ExecuteShell(command string)				error
-	IsRunning()									bool
+	Execute(command string, args ...string) error
+	ExecuteShell(command string, args ...string) error
+	IsRunning() bool
 	Stop()
 }
 
 type CrabRunner struct {
-	interpreterPath		string
-	workingDir			string
+	interpreterPath string
+	workingDir      string
 }
 
 func NewCrabRunner(interpreterPath, workingDir string) *CrabRunner {
 	return &CrabRunner{
-		interpreterPath: 	interpreterPath,
-		workingDir:			workingDir,
+		interpreterPath: interpreterPath,
+		workingDir:      workingDir,
 	}
 }
 
