@@ -32,11 +32,7 @@ func NewCrabRunner(interpreterPath, workingDir string) *CrabRunner {
 	}
 }
 
-<<<<<<< HEAD
-func (kr *CrabRunner) Run(executor Execute, filePath string) error {
-=======
 func (kr *CrabRunner) Run(executor Executor, filePath string) error {
->>>>>>> 90f5ff9 (commit init)
 	if executor.IsRunning() {
 		return fmt.Errorf("another process is already running!")
 	}
@@ -56,11 +52,7 @@ func (kr *CrabRunner) Run(executor Executor, filePath string) error {
 		return executor.Execute(kr.interpreterPath, absPath)
 	}
 
-<<<<<<< HEAD
 	return executor.ExecuteShell("crabby", absPath)
-=======
-	return executor.Execute("crabby", absPath)
->>>>>>> 90f5ff9 (commit init)
 }
 
 func (kr *CrabRunner) RunWithArgs(executor Executor, filePath string, args []string) error {

@@ -1,7 +1,5 @@
 package terminal
 
-<<<<<<< HEAD
-=======
 import "fmt"
 
 type Color string
@@ -17,5 +15,4 @@ const (
 func Colorize(text string, color Color) string {
 	return fmt.Sprintf("%s%s%s", color, text, Reset)
 }
->>>>>>> 90f5ff9 (commit init)
 
