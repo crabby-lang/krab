@@ -9,7 +9,7 @@ import (
 type Buffer struct {
 	lines			[]string
 	maxLines		int
-	mu				sync.RwMutex
+	mu				sync.RWMutex
 }
 
 // NewBuffer creates a new terminal buffer
